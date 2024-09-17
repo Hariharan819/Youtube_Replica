@@ -7,3 +7,13 @@ export const searchicon="https://cdn3.iconfinder.com/data/icons/feather-5/24/sea
 export const homeicon="https://img.icons8.com/?size=100&id=84005&format=png&color=000000";
 export const ytshortsicon="https://img.icons8.com/?size=100&id=2X8KoO8YIB6T&format=png&color=000000";
 export const Subscriptionsicon="https://img.icons8.com/?size=100&id=RNvQnmjWm0Wh&format=png&color=000000";
+export const trendingicon="https://img.icons8.com/?size=100&id=lhrKPeMFIFdF&format=png&color=000000";
+export const musicincon="https://img.icons8.com/?size=100&id=YtBDDYoF0gpT&format=png&color=000000";
+export const shoppingicon="https://img.icons8.com/?size=100&id=3117&format=png&color=000000";
+export  const flimicon="https://img.icons8.com/?size=100&id=78324&format=png&color=000000";
+export const liveicon="https://img.icons8.com/?size=100&id=fJXFbcW0WrW9&format=png&color=000000";
+export const gamingicon="https://img.icons8.com/?size=100&id=cAi7tS2wPJ7v&format=png&color=000000";
+export const sportsicon="https://img.icons8.com/?size=100&id=4wCjoEQDmegm&format=png&color=000000";
+export const podcasticon="https://img.icons8.com/?size=100&id=Eg32kWHyZXsD&format=png&color=000000";
+export const newsicon="https://img.icons8.com/?size=100&id=9981&format=png&color=000000";
+export const courseicon="https://img.icons8.com/?size=100&id=TxBgWXMwBiPE&format=png&color=000000";

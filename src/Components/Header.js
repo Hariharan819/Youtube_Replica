@@ -5,12 +5,24 @@ import {
   usericon,
   youtube_logo,
 } from "../Utilis/Constant";
+import { useDispatch } from "react-redux";
+import { togglemenu } from "../Redux-Utilis/ToggleSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const togglefunc = () => {
+    dispatch(togglemenu());
+  };
   return (
     <div className=" my-1 grid-flow-col grid shadow-md rounded-sm p-3">
       <div className="flex  col-span-2 p-2">
-        <img src={menu_logo} className="h-9 mix-blend-color-burn" alt="menu" />
+        <img
+          src={menu_logo}
+          className="h-9 mix-blend-color-burn cursor-pointer"
+          alt="menu"
+          onClick={togglefunc}
+          
+        />
         <img
           src={youtube_logo}
           className="h-7 mix-blend-color-burn mt-1  px-3"
