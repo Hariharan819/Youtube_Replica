@@ -14,7 +14,7 @@ const Header = () => {
     dispatch(togglemenu());
   };
   return (
-    <div className=" my-1 grid-flow-col grid shadow-md rounded-sm p-3">
+    <div className=" my-1 grid-flow-col grid shadow-md rounded-sm p-3 ">
       <div className="flex  col-span-2 p-2">
         <img
           src={menu_logo}

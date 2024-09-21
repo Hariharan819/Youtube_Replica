@@ -6,7 +6,7 @@ import store from "./Redux-Utilis/Store";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="">
         <Header />
         <Body />
       </div>
