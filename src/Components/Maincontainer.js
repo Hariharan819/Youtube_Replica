@@ -1,12 +1,14 @@
-import React from 'react'
-import Videocontainer from './Videocontaier'
+import React from "react";
+import Videocontainer from "./Videocontaier";
+import Sidebar from "./Sidebar";
 
 const Maincontainer = () => {
   return (
-    <div>
-        <Videocontainer/>
+    <div className="flex">
+      <Sidebar />
+      <Videocontainer />
     </div>
-  )
-}
+  );
+};
 
-export default Maincontainer
+export default Maincontainer;
