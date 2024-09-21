@@ -34,5 +34,5 @@ export const courseicon =
   "https://img.icons8.com/?size=100&id=TxBgWXMwBiPE&format=png&color=000000";
 const YOUR_API_KEY = "AIzaSyAjpk-jTTojG66A11KMAsGstN4kP5-Q6qs";
 export const youtubevideo_api =
-  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=" +
+  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&q=TamilNadu&q=Chennai&maxResults=50&key=" +
   YOUR_API_KEY;
