@@ -21,7 +21,6 @@ const Header = () => {
           className="h-9 mix-blend-color-burn cursor-pointer"
           alt="menu"
           onClick={togglefunc}
-          
         />
         <img
           src={youtube_logo}
