@@ -19,8 +19,8 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const togglevent = useSelector((store) => store.app.togglevent);
   return !togglevent ? null : (
-    <div className="w-40 -my-1 shadow-md cursor-pointer px-1 h-auto">
-      <ul className="w-40">
+    <div className="-my-1 shadow-md cursor-pointer px-1 overflow-y-scroll no-scrollbar h-auto ">
+      <ul className="">
         <Link to="/"><li className="flex px-2 py-3 hover:bg-slate-500 hover:rounded-sm h-12 hover:text-white">
           <img className="h-5" src={homeicon} alt="" /> Home
         </li>

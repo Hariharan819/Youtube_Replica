@@ -21,7 +21,7 @@ const Videocontainer = () => {
   };
 
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap overflow-y-scroll no-scrollbar  w-11/12">
       {videodata.map((videodata) => (
         <Link key={videodata.id} to={"/watch?v=" + videodata.id}>
           <Videocards data={videodata} />

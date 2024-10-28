@@ -12,7 +12,7 @@ const Watchpage = () => {
     // eslint-disable-next-line
   }, []);
   return (
-    <div>
+    <div className="">
       <iframe
         width="1200"
         height="600"
