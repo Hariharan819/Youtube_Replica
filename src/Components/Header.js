@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   menu_logo,
   searchicon,
@@ -15,6 +15,10 @@ const Header = () => {
   const [showsuggestion, setshowsuggestion] = useState(false);
   const dispatch = useDispatch();
 
+  // const searchclickfun =(value)=>{
+  // setQuerysearch(value)
+  // }
+
   const togglefunc = () => {
     dispatch(togglemenu());
   };
@@ -25,7 +29,6 @@ const Header = () => {
     getsuggestions();
     // eslint-disable-next-line
   }, [Querysearch]);
-
   const getsuggestions = async () => {
     const api_data2 = await fetch(Suggestionapi + Querysearch);
     const json2 = await api_data2.json();
@@ -53,8 +56,8 @@ const Header = () => {
             className="border border-zinc-500 w-2/3 h-10 rounded-l-2xl my-1 outline-gray-500 px-5 "
             value={Querysearch}
             onChange={(e) => setQuerysearch(e.target.value)}
-            onFocus={()=> setshowsuggestion(true)}
-            onBlur={()=> setshowsuggestion(false)}
+            onFocus={() => setshowsuggestion(true)}
+            onBlur={() => setshowsuggestion(false)}
           />
           <button className="w-12 border border-zinc-500 h-10 rounded-r-full my-1 justify-center">
             <img src={searchicon} alt="searchicon" className="h-8 px-1" />
@@ -70,6 +73,7 @@ const Header = () => {
           <ul>
             {suggestionvalue.map((value) => (
               <li
+                // onClick={()=>searchclickfun(value)}
                 key={value}
                 className="shadow-sm px-2 py-2 hover:bg-gray-100 cursor-pointer"
               >
