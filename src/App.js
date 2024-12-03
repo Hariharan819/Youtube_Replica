@@ -3,7 +3,7 @@ import "./App.css";
 import Body from "./Components/Body";
 import Header from "./Components/Header";
 import store from "./Redux-Utilis/Store";
-import Maincontainer from "./Components/Maincontainer";
+// import Maincontainer from "./Components/Maincontainer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Watchpage from "./Components/Watchpage";
 import Watchpagesearch from "./Components/Watchpagesearch";
@@ -13,10 +13,6 @@ const approuter = createBrowserRouter([
     path: "/",
     element: <Body />,
     children: [
-      {
-        path: "/",
-        element: <Maincontainer />,
-      },
       {
         path: "/watch",
         element: <Watchpage />,
@@ -30,12 +26,14 @@ const approuter = createBrowserRouter([
 ]);
 function App() {
   return (
-    <Provider store={store}>
-      <div className=" no-scrollbar">
-        <Header />
-        <RouterProvider router={approuter} />
-      </div>
-    </Provider>
+    <div className="overflow-y-hidden">
+      <Provider store={store}>
+        <div className="overflow-y-hidden">
+          <Header />
+          <RouterProvider router={approuter} />
+        </div>
+      </Provider>
+    </div>
   );
 }
 

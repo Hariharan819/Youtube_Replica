@@ -12,10 +12,10 @@ const Watchpage = () => {
     // eslint-disable-next-line
   }, []);
   return (
-    <div className="">
+    <div className="w-screen h-svh">
       <iframe
-        width="1200"
-        height="600"
+        width="100%"
+        height="88%"
         src={"https://www.youtube.com/embed/" + idofvideo}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -26,3 +26,4 @@ const Watchpage = () => {
 };
 
 export default Watchpage;
+   

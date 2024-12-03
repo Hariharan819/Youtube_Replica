@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { youtubevideo_api } from "../Utilis/Constant";
 import Videocards from "./Videocards";
 import { Link } from "react-router-dom";
 
 const Videocontainer = () => {
   const [videodata, setvideodata] = useState([]);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       getvideos();
@@ -14,6 +14,7 @@ const Videocontainer = () => {
       clearTimeout(timer);
     };
   }, []);
+
   const getvideos = async () => {
     const api_data = await fetch(youtubevideo_api);
     const json = await api_data.json();
@@ -21,10 +22,10 @@ const Videocontainer = () => {
   };
 
   return (
-    <div className="flex flex-wrap overflow-y-scroll no-scrollbar  w-11/12">
-      {videodata.map((videodata) => (
-        <Link key={videodata.id} to={"/watch?v=" + videodata.id}>
-          <Videocards data={videodata} />
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 w-full h-full overflow-y-hidden">
+      {videodata.map((video) => (
+        <Link key={video.id} to={`/watch?v=${video.id}`}>
+          <Videocards data={video} />
         </Link>
       ))}
     </div>

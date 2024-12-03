@@ -1,103 +1,111 @@
 import React from "react";
-import {
-  courseicon,
-  gamingicon,
-  homeicon,
-  liveicon,
-  musicincon,
-  newsicon,
-  podcasticon,
-  shoppingicon,
-  sportsicon,
-  Subscriptionsicon,
-  trendingicon,
-  ytshortsicon,
-} from "../Utilis/Constant";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import {
+  homeicon,
+  ytshortsicon,
+  Subscriptionsicon,
+  courseicon,
+  gamingicon,
+  musicincon,
+  sportsicon,
+  liveicon,
+  podcasticon,
+  newsicon,
+  shoppingicon,
+  trendingicon,
+} from "../Utilis/Constant";
 
 const Sidebar = () => {
   const togglevent = useSelector((store) => store.app.togglevent);
+
   return !togglevent ? null : (
-    <div className="-my-1 shadow-md cursor-pointer px-1 overflow-y-scroll no-scrollbar h-auto ">
-      <ul className="">
-        <Link to="/"><li className="flex px-2 py-3 hover:bg-slate-500 hover:rounded-sm h-12 hover:text-white">
-          <img className="h-5" src={homeicon} alt="" /> Home
-        </li>
-        </Link>
-        <li className="flex px-2 hover:bg-slate-500 hover:rounded-sm h-12 items-center hover:text-white  ">
-          <img className="h-5" src={ytshortsicon} alt="" />
-          Shorts
-        </li>
-        <li className="flex px-2  hover:bg-slate-500 hover:rounded-sm h-12  items-center hover:text-white">
-          <img
-            className="h-5 hover:bg-slate-500 hover:rounded-sm "
-            src={Subscriptionsicon}
-            alt=""
-          />
+    <div className="bg-white fixed md:relative top-0 left-0 w-16 md:w-64 h-screen shadow-md overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 z-20">
+      <div className="py-4">
+        {/* Primary Menu */}
+        <ul>
+          <Link to="/">
+            <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+              <img className="h-5" src={homeicon} alt="Home" />
+              <span className="hidden md:inline">Home</span>
+            </li>
+          </Link>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={ytshortsicon} alt="Shorts" />
+            <span className="hidden md:inline">Shorts</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={Subscriptionsicon} alt="Subscriptions" />
+            <span className="hidden md:inline">Subscriptions</span>
+          </li>
+        </ul>
+
+        <hr className="my-4" />
+
+        {/* Subscriptions */}
+        <h4 className="text-gray-700 font-semibold px-3 py-2 hidden md:block">
           Subscriptions
-        </li>
-      </ul>
-      <hr />
-      <h4 className=" px-1 font-semibold flex  hover:bg-slate-500 hover:rounded-sm h-12  items-center hover:text-white ">
-        <img className="h-5" src={Subscriptionsicon} alt="" />
-        Subscriptions
-      </h4>
-      <ul className="">
-        <li className="hover:bg-slate-500 hover:rounded-sm h-12 items-center flex px-2 hover:text-white">
-          Music
-        </li>
-        <li className=" hover:bg-slate-500 hover:rounded-sm h-12  items-center flex px-2 hover:text-white">
-          Sports
-        </li>
-        <li className="hover:bg-slate-500 hover:rounded-sm h-12  items-center flex px-2 hover:text-white">
-          Gaming
-        </li>
-        <li className=" hover:bg-slate-500 hover:rounded-sm  h-12  items-center flex px-2 hover:text-white">
-          Movies
-        </li>
-      </ul>
-      <hr />
-      <h2 className=" px-1  font-semibold  hover:bg-slate-500 hover:rounded-sm h-12  items-center flex  hover:text-white">
-        Explore
-      </h2>
-      <ul>
-        <li className="flex  px-2 hover:bg-slate-500 hover:rounded-sm h-12  items-center hover:text-white ">
-          <img className="h-5 " src={trendingicon} alt="" /> Trending
-        </li>
-        <li className="flex  px-2  hover:bg-slate-500 hover:rounded-sm h-12  items-center hover:text-white ">
-          <img className="h-5" src={musicincon} alt="" />
-          Music
-        </li>
-        <li className="flex px-1  hover:bg-slate-500 hover:rounded-sm  items-center h-12 hover:text-white">
-          <img className="h-5 px-1" src={shoppingicon} alt="" />
-          Shopping
-        </li>
-        <li className="flex  px-1 hover:bg-slate-500 hover:rounded-sm h-12  items-center  hover:text-white">
-          <img className="h-5 px-1" src={gamingicon} alt="" />
-          Gaming
-        </li>
-        <li className="flex  px-2   hover:bg-slate-500 hover:rounded-sm  items-center h-12 hover:text-white ">
-          <img className="h-5" src={sportsicon} alt="" />
-          Sports
-        </li>
-        <li className="flex px-1  hover:bg-slate-500 hover:rounded-sm  items-center h-12 hover:text-white ">
-          <img className="h-5 px-1" src={liveicon} alt="" />
-          Live
-        </li>
-        <li className="flex px-1  hover:bg-slate-500 hover:rounded-sm   items-center h-12 hover:text-white">
-          <img className="h-5 px-1" src={courseicon} alt="" />
-          Courses
-        </li>
-        <li className="flex  px-1 hover:bg-slate-500 hover:rounded-sm   items-center h-12 hover:text-white ">
-          <img className="h-5 px-1" src={newsicon} alt="" />
-          News
-        </li>
-        <li className="flex  px-1 hover:bg-slate-500 hover:rounded-sm h-12  items-center  hover:text-white">
-          <img className="h-5 px-1" src={podcasticon} alt="" />
-          Podcasts
-        </li>
-      </ul>
+        </h4>
+        <ul>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <span className="hidden md:inline">Music</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <span className="hidden md:inline">Sports</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <span className="hidden md:inline">Gaming</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <span className="hidden md:inline">Movies</span>
+          </li>
+        </ul>
+
+        <hr className="my-4" />
+
+        {/* Explore Section */}
+        <h2 className="text-gray-700 font-semibold px-3 py-2 hidden md:block">
+          Explore
+        </h2>
+        <ul>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={trendingicon} alt="Trending" />
+            <span className="hidden md:inline">Trending</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={musicincon} alt="Music" />
+            <span className="hidden md:inline">Music</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={shoppingicon} alt="Shopping" />
+            <span className="hidden md:inline">Shopping</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={gamingicon} alt="Gaming" />
+            <span className="hidden md:inline">Gaming</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={sportsicon} alt="Sports" />
+            <span className="hidden md:inline">Sports</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={liveicon} alt="Live" />
+            <span className="hidden md:inline">Live</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={courseicon} alt="Courses" />
+            <span className="hidden md:inline">Courses</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={newsicon} alt="News" />
+            <span className="hidden md:inline">News</span>
+          </li>
+          <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+            <img className="h-5" src={podcasticon} alt="Podcasts" />
+            <span className="hidden md:inline">Podcasts</span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

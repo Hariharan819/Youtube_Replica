@@ -1,11 +1,13 @@
 import React from "react";
 // import Sidebar from "./Sidebar";
-import { Outlet } from "react-router";
+import Sidebar from "./Sidebar";
+import Videocontainer from "./Videocontaier";
 
 const Body = () => {
   return (
-    <div className=" flex  no-scrollbar" >
-      <Outlet />
+    <div className=" flex overflow-auto" >
+      <Sidebar/>
+      <Videocontainer/>
     </div>
   );
 };
