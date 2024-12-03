@@ -31,11 +31,12 @@
     const getsuggestions = async () => {
       const api_data2 = await fetch(Suggestionapi + Querysearch);
       const json2 = await api_data2.json();
+      // console.log(js)
       setsuggestionvalue(json2[1]);
     };
 
     return (
-      <div className="bg-white shadow-md overflow-y-hidden">
+      <div className="bg-white shadow-md overflow-y-hidden w-screen fixed top-0">
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-3 md:px-6 lg:px-10">
           {/* Left Section */}
@@ -101,7 +102,7 @@
 
         {/* Suggestions Dropdown */}
         {showsuggestion && (
-          <div className="absolute bg-white shadow-md rounded-md mt-1 w-[90%] max-w-lg mx-auto z-10">
+          <div className="fixed bg-white shadow-md rounded-md mt-1 w-[35%] right-[30%] ">
             <ul>
               {suggestionvalue.map((value) => (
                 <li

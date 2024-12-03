@@ -20,9 +20,9 @@ const Videocontainer = () => {
     const json = await api_data.json();
     setvideodata(json.items);
   };
-
+// console.log(videodata)
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 w-full h-full overflow-y-hidden">
+    <div className=" flex flex-wrap mt-16" >
       {videodata.map((video) => (
         <Link key={video.id} to={`/watch?v=${video.id}`}>
           <Videocards data={video} />

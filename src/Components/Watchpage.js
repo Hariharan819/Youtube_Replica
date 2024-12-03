@@ -11,8 +11,9 @@ const Watchpage = () => {
     dispatch(closemenu());
     // eslint-disable-next-line
   }, []);
+  console.log(idofvideo);
   return (
-    <div className="w-screen h-svh">
+    <div className="w-screen h-svh ">
       <iframe
         width="100%"
         height="88%"

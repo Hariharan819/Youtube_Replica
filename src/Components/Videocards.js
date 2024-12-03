@@ -5,7 +5,7 @@ const Videocards = ({ data }) => {
   const { snippet, statistics } = data;
   const { channelTitle, title, thumbnails } = snippet;
   return (
-    <div className="rounded-md bg-slate-100 shadow-md w-80 p-2 m-2 cursor-pointer h-80 hover:-translate-y-2  transition-transform ">
+    <div className="rounded-md bg-slate-100 shadow-md w-72 p-2 m-2 cursor-pointer h-80 hover:-translate-y-2  transition-transform ">
       <img className="rounded-sm w-[100%]" src={thumbnails.medium.url} alt="" />
       <ul className="flex flex-col">
         <li className="font-semibold ">{channelTitle}</li>

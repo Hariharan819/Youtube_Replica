@@ -15,12 +15,11 @@ import {
   shoppingicon,
   trendingicon,
 } from "../Utilis/Constant";
-
 const Sidebar = () => {
   const togglevent = useSelector((store) => store.app.togglevent);
 
   return !togglevent ? null : (
-    <div className="bg-white fixed md:relative top-0 left-0 w-16 md:w-64 h-screen shadow-md overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 z-20">
+    <div className="bg-white  top-16 left-0 w-auto md:w-64 h-screen shadow-md overflow-y-auto z-20">
       <div className="py-4">
         {/* Primary Menu */}
         <ul>
