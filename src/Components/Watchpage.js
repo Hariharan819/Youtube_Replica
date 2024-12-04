@@ -27,4 +27,3 @@ const Watchpage = () => {
 };
 
 export default Watchpage;
-   
