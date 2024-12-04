@@ -13,10 +13,10 @@ const Watchpage = () => {
   }, []);
   console.log(idofvideo);
   return (
-    <div className="w-screen h-svh ">
+    <div className="w-screen h-screen pt-16">
       <iframe
         width="100%"
-        height="88%"
+        height="100%"
         src={"https://www.youtube.com/embed/" + idofvideo}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

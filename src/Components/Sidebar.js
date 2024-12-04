@@ -71,6 +71,7 @@ const Sidebar = () => {
             <span className="hidden lg:inline">Gaming</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
+          <img className="h-5" src={trendingicon} alt="Trending" />
             <span className="hidden lg:inline">Movies</span>
           </li>
         </ul>

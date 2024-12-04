@@ -7,6 +7,7 @@ import store from "./Redux-Utilis/Store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Watchpage from "./Components/Watchpage";
 import Watchpagesearch from "./Components/Watchpagesearch";
+import Header from "./Components/Header";
 
 const approuter = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className=" no-scrollbar overflow-hidden">
+        <Header/>
         <RouterProvider router={approuter} />
       </div>
     </Provider>
