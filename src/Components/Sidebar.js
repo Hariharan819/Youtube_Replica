@@ -21,7 +21,7 @@ const Sidebar = () => {
   return !togglevent ? null : (
     <div
       className="bg-white top-16 left-0 h-screen shadow-md overflow-y-auto z-20 
-      w-16 md:w-64 transition-all duration-300"
+      w-16 md:w-16 sm:w-16 lg:w-64 transition-all duration-300"
     >
       <div className="py-4">
         {/* Primary Menu */}
@@ -29,16 +29,16 @@ const Sidebar = () => {
           <Link to="/">
             <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
               <img className="h-5" src={homeicon} alt="Home" />
-              <span className="hidden md:inline">Home</span>
+              <span className="hidden lg:inline">Home</span>
             </li>
           </Link>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={ytshortsicon} alt="Shorts" />
-            <span className="hidden md:inline">Shorts</span>
+            <span className="hidden lg:inline">Shorts</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={Subscriptionsicon} alt="Subscriptions" />
-            <span className="hidden md:inline">Subscriptions</span>
+            <span className="hidden lg:inline">Subscriptions</span>
           </li>
         </ul>
 
@@ -51,7 +51,7 @@ const Sidebar = () => {
             src={Subscriptionsicon}
             alt="Subscriptions"
           />
-          <h4 className="text-gray-700 font-semibold -ml-1 hidden md:block">
+          <h4 className="text-gray-700 font-semibold -ml-1 hidden lg:block">
             Subscriptions
           </h4>
         </div>
@@ -59,64 +59,64 @@ const Sidebar = () => {
         <ul>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={musicincon} alt="Music" />
-            <span className="hidden md:inline">Music</span>
+            <span className="hidden lg:inline">Music</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={sportsicon} alt="Sports" />
-            <span className="hidden md:inline">Sports</span>
+            <span className="hidden lg:inline">Sports</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={gamingicon} alt="Gaming" />
 
-            <span className="hidden md:inline">Gaming</span>
+            <span className="hidden lg:inline">Gaming</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
-            <span className="hidden md:inline">Movies</span>
+            <span className="hidden lg:inline">Movies</span>
           </li>
         </ul>
 
         <hr className="my-4" />
 
         {/* Explore Section */}
-        <h2 className="text-gray-700 font-semibold px-3 py-2 hidden md:block">
+        <h2 className="text-gray-700 font-semibold px-3 py-2 hidden lg:block">
           Explore
         </h2>
         <ul>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={trendingicon} alt="Trending" />
-            <span className="hidden md:inline">Trending</span>
+            <span className="hidden lg:inline">Trending</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={musicincon} alt="Music" />
-            <span className="hidden md:inline">Music</span>
+            <span className="hidden lg:inline">Music</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={shoppingicon} alt="Shopping" />
-            <span className="hidden md:inline">Shopping</span>
+            <span className="hidden lg:inline">Shopping</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={gamingicon} alt="Gaming" />
-            <span className="hidden md:inline">Gaming</span>
+            <span className="hidden lg:inline">Gaming</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={sportsicon} alt="Sports" />
-            <span className="hidden md:inline">Sports</span>
+            <span className="hidden lg:inline">Sports</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={liveicon} alt="Live" />
-            <span className="hidden md:inline">Live</span>
+            <span className="hidden lg:inline">Live</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={courseicon} alt="Courses" />
-            <span className="hidden md:inline">Courses</span>
+            <span className="hidden lg:inline">Courses</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={newsicon} alt="News" />
-            <span className="hidden md:inline">News</span>
+            <span className="hidden lg:inline">News</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
             <img className="h-5" src={podcasticon} alt="Podcasts" />
-            <span className="hidden md:inline">Podcasts</span>
+            <span className="hidden lg:inline">Podcasts</span>
           </li>
         </ul>
       </div>
