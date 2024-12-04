@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
-import { API_OPTIONS } from "../Utilis/Constant";
+import {YOUR_API_KEY } from "../Utilis/Constant";
 
 const Watchpagesearch = () => {
   const location = useLocation();
@@ -10,24 +10,19 @@ const Watchpagesearch = () => {
     return queryParams.get("search");
   };
   const query = getQueryParam();
-  // console.log(query);
+  
+  const keywordbasedvideo=async()=>{
+    const video_data=await fetch("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q="+{query}+ "&type=video&key="+YOUR_API_KEY);
+    const json3=await video_data.json();
+    // console.log(json3.items);
+    setqueryvalue(json3.items);
+    console.log(queryvalue);
 
-  const getsuggestion = async () => {
-    const api_data = await fetch(
-      "https://api.themoviedb.org/3/search/movie?query=" +
-        { query } +
-        "&include_adult=false&language=en-US&page=1",
-      API_OPTIONS
-    );
-    if (api_data) {
-      const json = await api_data?.json();
-      setqueryvalue(json?.results);
-      console.log(json?.results);
-    }
-  };
+  }
 
   useEffect(() => {
-    getsuggestion();
+  
+    keywordbasedvideo();
     // eslint-disable-next-line
   }, [""]);
   return <div className="pt-10">

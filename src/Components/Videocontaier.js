@@ -20,7 +20,7 @@ const Videocontainer = () => {
     const json = await api_data.json();
     setvideodata(json.items);
   };
-  console.log(videodata)
+  // console.log(videodata)
   return (
     <div className=" flex flex-wrap ">
       {videodata.map((video) => (

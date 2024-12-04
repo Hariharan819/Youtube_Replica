@@ -32,7 +32,7 @@ export const newsicon =
   "https://img.icons8.com/?size=100&id=9981&format=png&color=000000";
 export const courseicon =
   "https://img.icons8.com/?size=100&id=TxBgWXMwBiPE&format=png&color=000000";
-const YOUR_API_KEY = "AIzaSyAjpk-jTTojG66A11KMAsGstN4kP5-Q6qs";
+export const YOUR_API_KEY = "AIzaSyAjpk-jTTojG66A11KMAsGstN4kP5-Q6qs";
 
 export const youtubevideo_api =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&q=TamilNadu&q=Chennai&maxResults=90&key=" +
