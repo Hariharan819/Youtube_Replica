@@ -13,12 +13,13 @@ const Body = () => {
         <Header />
       </div> */}
 
-      <div className="flex flex-1 pt-16 overflow-hidden">
+      <div className="flex flex-1 pt-28 lg:pt-16 sm:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 overflow-hidden">
         {togglevent && (
-          <div className="fixed top-16 left-0 w-64 h-[calc(100vh-4rem)] ">
+          <div className="fixed  left-0 w-64 h-[calc(100vh-4rem)] ">
             <Sidebar />
           </div>
         )}
+
         <div
           className={`overflow-y-auto bg-gray-100 
           ${
@@ -30,6 +31,7 @@ const Body = () => {
         >
           <Videocontainer />
         </div>
+
       </div>
     </div>
   );

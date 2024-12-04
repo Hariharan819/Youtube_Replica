@@ -206,8 +206,8 @@ const Header = () => {
         </div>
 
         {/* Middle Section */}
-        <div className="hidden md:flex flex-grow justify-between lg:justify-center lg:items-center">
-          <div className="relative flex items-center w-1/2 md:w-3/4 lg:w-2/3 xl:w-1/2 md:mx-5">
+        <div className=" hidden  lg:flex md:flex sm:flex flex-grow justify-between ">
+          <div className="relative flex items-center 2xl:w-1/2  xl:w-1/2 lg:w-1/2 md:w-3/4 md:mx-[20%] sm:w-3/4 sm:pl-[12%] ">
             <input
               type="text"
               className="border border-gray-300 rounded-l-full px-4 py-2 w-full outline-none text-sm"
@@ -232,12 +232,12 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Search Section */}
-      <div className="flex md:hidden px-4 py-2">
-        <div className="relative flex items-center w-full">
-          <input
-            type="text"
-            className="border border-gray-300 rounded-l-full px-4 py-2 w-full outline-none text-sm"
+        {/* Mobile Search Section */}
+        <div className="flex md:hidden sm:hidden lg:hidden xl:hidden 2xl:hidden px-4 py-2">
+          <div className="relative flex items-center mx-auto w-full right-0 left-0">
+            <input
+              type="text"
+              className="border border-gray-300 rounded-l-full px-4 py-2 w-full outline-none text-sm"
             value={Querysearch}
             onChange={(e) => setQuerysearch(e.target.value)}
             onFocus={() => setshowsuggestion(true)}
@@ -248,14 +248,14 @@ const Header = () => {
             className="bg-gray-100 border border-gray-300 rounded-r-full p-2"
             onClick={handleSearch} // Trigger search on button click
           >
-            <img src={searchicon} alt="Search Icon" className="h-6" />
+            <img src={searchicon} alt="Search Icon" className="h-5" />
           </button>
         </div>
       </div>
 
       {/* Suggestions Dropdown */}
       {showsuggestion && (
-        <div className="fixed bg-white shadow-md rounded-md mt-1 w-[65%] mx-auto right-0 left-0 md:w-[50%] md:mx-auto md:right-0 md:left-0 lg:mx-auto lg:right-0 lg:left-10 lg:w-[45%] xl:w-[35%]">
+        <div className="fixed bg-white shadow-md rounded-md mt-1 w-[65%] mx-auto right-0 left-0 md:w-[40%] md:mx-auto md:right-0 md:left-16 lg:mx-auto  lg:right-0 lg:left-16 lg:w-[25%]  xl:w-[25%] 2xl:w-[26%]">
           <ul>
             {suggestionvalue.map((value) => (
               <li
