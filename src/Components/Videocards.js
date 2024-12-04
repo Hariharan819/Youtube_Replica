@@ -9,9 +9,7 @@ const Videocards = ({ data }) => {
   return (
     <div
       className={`rounded-md bg-slate-100 shadow-md m-2 p-2 cursor-pointer h-80 hover:-translate-y-2  transition-transform 
-        ${
-        togglevent ? "w-60" : "w-80"
-      } 
+        ${togglevent ? "w-60" : "w-80"} 
        ${togglevent ? "2xl:w-72" : "2xl:w-80"} 
         ${togglevent ? "xl:w-60" : "xl:w-72"} 
          ${togglevent ? "lg:w-56" : "lg:w-52"} 
