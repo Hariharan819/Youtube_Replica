@@ -16,7 +16,7 @@ const Watchpagevideo = ({ data }) => {
         <p className="mt-2 text-gray-700 text-sm line-clamp-2">{title}</p>
       </div>
       <div className="px-4 py-2 border-t border-gray-200">
-        <Link to={"/searchvideo/=" + data?.id?.videoId}>
+        <Link to={"/searchvideo/" + data?.id?.videoId}>
           <button className="w-full text-white bg-red-600 hover:bg-red-700 font-semibold py-2 rounded-md transition duration-300">
             Watch Now
           </button>

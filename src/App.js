@@ -24,7 +24,7 @@ const approuter = createBrowserRouter([
     element: <Watchpagesearch />,
   },
   {
-    path: "/searchvideo",
+    path: "/searchvideo/:id",
     element: <Searchvideoplay />,
   },
 ]);

@@ -12,7 +12,7 @@ const Watchpagesearch = () => {
   };
   const query = getQueryParam();
 
-  console.log(query);
+  // console.log(query);
 
   const keywordbasedvideo = async () => {
     const video_data = await fetch(
@@ -22,7 +22,7 @@ const Watchpagesearch = () => {
         YOUR_API_KEY2
     );
     const json3 = await video_data.json();
-    console.log(json3.items);
+    // console.log(json3.items);
     setqueryvalue(json3.items);
     // console.log(queryvalue);
   };
