@@ -45,7 +45,15 @@ const Header = () => {
     }
 
     try {
-      const api_data2 = await fetch(Suggestionapi + Querysearch);
+      const api_data2 = await fetch(
+        "https://proxy.cors.sh/http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=" +
+          Querysearch,
+        {
+          headers: {
+            "x-cors-api-key": "temp_90f69d79dcb5969ccc2b9ef6ed0cd406",
+          },
+        }
+      );
       const json2 = await api_data2.json();
       setsuggestionvalue(json2[1]);
     } catch (error) {
