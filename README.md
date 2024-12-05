@@ -1,5 +1,9 @@
 Live link:https://youtube-replica-xzh8.onrender.com/
 
+## Demo Video
+[YouTube Demo](https://drive.google.com/drive/folders/1ERldHsqRhciGUacxJIitbncXvll1lnJI?usp=sharing)
+- Check out the demo video of the project:
+
 **Note on API Limitations:**
 
 This project uses the free version of the YouTube Data API, which has a limited number of requests that can be made per day. As a result, users may occasionally encounter a "Failed to Fetch" message when the API limit is exceeded. This is due to the daily quota limitations imposed by the free API key. This limitation does not affect the core functionality of the project, but it may temporarily prevent fetching new video data until the quota is reset.
@@ -43,21 +47,21 @@ This project allows users to search for videos, view related video cards, and na
 
 - **Interactive UI**:  
   Incorporated interactive elements like video cards that redirect to the video page when clicked, and a dynamic search bar that instantly shows suggestions while typing.
-  
-**How It Works**
 
-I**initial Page:**
+- **How It Works**
+
+- **initial Page:**
 
 The homepage displays a search bar at the top, and below it, a grid of suggested videos is shown once a query is entered.
 
-**Search Process:**
+- **Search Process:**
 
 As the user types a search query, video suggestions are fetched from the YouTube API using the debouncing technique. This delays the API call until the user has stopped typing, reducing unnecessary requests.
 
-**Displaying Search Results:**
+- **Displaying Search Results:**
 
 Once the user submits the search, the application fetches related video data and displays it in the form of cards containing the video title and channel name.
 
-**Navigation to Video Page**:
+- **Navigation to Video Page**:
 
 When a user clicks on a video card, they are redirected to the corresponding video page on YouTube.
