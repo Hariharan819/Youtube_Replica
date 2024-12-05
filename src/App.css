@@ -9,8 +9,8 @@
 
 /* Hide scrollbar for IE, Edge, and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Show scrollbar for Chrome, Safari, and Opera */
@@ -29,8 +29,8 @@
 
 /* Show scrollbar for IE, Edge, and Firefox */
 .scrollbar {
-  -ms-overflow-style: auto;  /* IE and Edge */
-  scrollbar-width: thin;  /* Firefox */
+  -ms-overflow-style: auto; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
 }
 
 .scrollbar::-webkit-scrollbar-thumb:hover {

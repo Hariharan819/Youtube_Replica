@@ -33,6 +33,7 @@ export const newsicon =
 export const courseicon =
   "https://img.icons8.com/?size=100&id=TxBgWXMwBiPE&format=png&color=000000";
 export const YOUR_API_KEY = "AIzaSyAjpk-jTTojG66A11KMAsGstN4kP5-Q6qs";
+export const YOUR_API_KEY2 = "AIzaSyCtCof_vz6qCQwqhs5NRQhOx1o1v8ocX4Y";
 
 export const youtubevideo_api =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&q=TamilNadu&q=Chennai&maxResults=90&key=" +
@@ -41,12 +42,11 @@ export const youtubevideo_api =
 export const Suggestionapi =
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
-
-
-export const API_OPTIONS  = {
-  method: 'GET',
+export const API_OPTIONS = {
+  method: "GET",
   headers: {
-    accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MDU5ODllYTM3MTc2N2Y2NjM1NGQyZTkzMGUzNmYxYiIsIm5iZiI6MTczMzMwNDAwNS4zMTcsInN1YiI6IjY3NTAxZWM1OWJlZTY0NjljMTQ1NzY1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZsDxMVKWMcAHDj28Ft_lE3c8jNUyL0OyfOAfZ6AuUJs'
-  }
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MDU5ODllYTM3MTc2N2Y2NjM1NGQyZTkzMGUzNmYxYiIsIm5iZiI6MTczMzMwNDAwNS4zMTcsInN1YiI6IjY3NTAxZWM1OWJlZTY0NjljMTQ1NzY1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ZsDxMVKWMcAHDj28Ft_lE3c8jNUyL0OyfOAfZ6AuUJs",
+  },
 };

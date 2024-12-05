@@ -14,8 +14,7 @@ const Header = () => {
   const [Querysearch, setQuerysearch] = useState("");
   const [suggestionvalue, setsuggestionvalue] = useState([]);
   const [showsuggestion, setshowsuggestion] = useState(false);
-  const id = 
-  1304090;
+
   const dispatch = useDispatch();
 
   const searchclickfun = (value) => {
@@ -54,13 +53,9 @@ const Header = () => {
     }
   };
 
- 
-
   return (
-    <div className="bg-white shadow-md overflow-y-hidden w-screen fixed top-0">
-      {/* Header */}
+    <div className="bg-white shadow-md overflow-y-hidden w-screen fixed top-0 z-50">
       <div className="flex items-center justify-between px-4 py-3 md:px-6 lg:px-10">
-        {/* Left Section */}
         <div className="flex items-center">
           <img
             src={menu_logo}
@@ -75,8 +70,7 @@ const Header = () => {
           />
         </div>
 
-        {/* Middle Section */}
-        <div className=" hidden  lg:flex md:flex sm:flex flex-grow justify-between ">
+        <div className=" hidden  lg:flex md:flex sm:flex flex-grow justify-between items-center">
           <div className="relative flex items-center 2xl:w-1/2  xl:w-1/2 lg:w-1/2 md:w-3/4 md:mx-[20%] sm:w-3/4 sm:pl-[12%] ">
             <input
               type="text"
@@ -96,7 +90,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="flex items-center">
           <img className="h-8 cursor-pointer" src={usericon} alt="User Icon" />
         </div>
@@ -116,21 +109,20 @@ const Header = () => {
           />
           <button
             className="bg-gray-100 border border-gray-300 rounded-r-full p-2"
-            onClick={handleSearch} // Trigger search on button click
+            onClick={handleSearch}
           >
             <img src={searchicon} alt="Search Icon" className="h-5" />
           </button>
         </div>
       </div>
 
-      {/* Suggestions Dropdown */}
       {showsuggestion && (
         <div className="fixed bg-white shadow-md rounded-md mt-1 w-[65%] mx-auto right-0 left-0 md:w-[40%] md:mx-auto md:right-0 md:left-16 lg:mx-auto  lg:right-0 lg:left-16 lg:w-[25%]  xl:w-[25%] 2xl:w-[26%]">
           <ul>
             {suggestionvalue.map((value) => (
               <li
                 key={value}
-                onMouseDown={() => searchclickfun(value)} // Set value on click
+                onMouseDown={() => searchclickfun(value)}
                 className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-serif"
               >
                 🔍 {value}

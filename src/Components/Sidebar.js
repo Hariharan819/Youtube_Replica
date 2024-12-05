@@ -24,7 +24,6 @@ const Sidebar = () => {
       w-16 md:w-16 sm:w-16 lg:w-64 transition-all duration-300"
     >
       <div className="py-4">
-        {/* Primary Menu */}
         <ul>
           <Link to="/">
             <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
@@ -44,7 +43,6 @@ const Sidebar = () => {
 
         <hr className="my-4" />
 
-        {/* Subscriptions */}
         <div className="flex">
           <img
             className="h-5 px-3"
@@ -71,14 +69,13 @@ const Sidebar = () => {
             <span className="hidden lg:inline">Gaming</span>
           </li>
           <li className="flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-md">
-          <img className="h-5" src={trendingicon} alt="Trending" />
+            <img className="h-5" src={trendingicon} alt="Trending" />
             <span className="hidden lg:inline">Movies</span>
           </li>
         </ul>
 
         <hr className="my-4" />
 
-        {/* Explore Section */}
         <h2 className="text-gray-700 font-semibold px-3 py-2 hidden lg:block">
           Explore
         </h2>

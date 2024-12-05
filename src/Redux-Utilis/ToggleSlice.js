@@ -9,11 +9,11 @@ const appslice = createSlice({
     togglemenu: (state) => {
       state.togglevent = !state.togglevent;
     },
-    closemenu:(state)=>{
-      state.togglevent=false;
-    }
+    closemenu: (state) => {
+      state.togglevent = false;
+    },
   },
 });
 
-export const { togglemenu,closemenu } = appslice.actions;
+export const { togglemenu, closemenu } = appslice.actions;
 export default appslice.reducer;

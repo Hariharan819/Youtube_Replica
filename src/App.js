@@ -8,26 +8,31 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Watchpage from "./Components/Watchpage";
 import Watchpagesearch from "./Components/Watchpagesearch";
 import Header from "./Components/Header";
+import Searchvideoplay from "./Components/Searchvideoplay";
 
 const approuter = createBrowserRouter([
   {
-    path:"/",
-    element:<Body/>
+    path: "/",
+    element: <Body />,
   },
   {
-    path:"/watch",
-    element:<Watchpage/>
+    path: "/watch",
+    element: <Watchpage />,
   },
   {
-    path:"/watchsearch",
-    element:<Watchpagesearch/>
-  }
+    path: "/watchsearch",
+    element: <Watchpagesearch />,
+  },
+  {
+    path: "/searchvideo",
+    element: <Searchvideoplay />,
+  },
 ]);
 function App() {
   return (
     <Provider store={store}>
       <div className=" no-scrollbar overflow-hidden">
-        <Header/>
+        <Header />
         <RouterProvider router={approuter} />
       </div>
     </Provider>
