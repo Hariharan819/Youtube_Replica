@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
-  API_OPTIONS,
   menu_logo,
   searchicon,
-  Suggestionapi,
   usericon,
   youtube_logo,
 } from "../Utilis/Constant";

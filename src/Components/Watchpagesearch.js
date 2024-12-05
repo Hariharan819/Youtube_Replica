@@ -28,7 +28,7 @@ const Watchpagesearch = () => {
   };
 
   useEffect(() => {
-    // keywordbasedvideo();
+    keywordbasedvideo();
     // eslint-disable-next-line
   }, [""]);
   return (

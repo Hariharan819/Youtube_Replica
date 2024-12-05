@@ -50,6 +50,7 @@ export const Suggestionapi =
   //   'x-cors-api-key': 'temp_90f69d79dcb5969ccc2b9ef6ed0cd406'
   //   }
   // })
+  
 export const API_OPTIONS = {
   method: "GET",
   headers: {
